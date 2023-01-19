@@ -730,6 +730,11 @@ svg:hover {
   display: none;
 }
 
+.easons-choosing-btn {
+  text-align: center;
+  padding: 3% 0 5% 0;
+}
+
 @media screen and (max-width: 1815px) {
   .section-about-block {
     padding: 0 0 0 5%;
@@ -875,16 +880,17 @@ svg:hover {
 
 @media screen and (max-width: 800px) {
   .wrap-reasons-choosing {
-    gap: 20px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
   .reasons-choosing__block {
-    -ms-flex-preferred-size: 200px;
-        flex-basis: 200px;
+    -ms-flex-preferred-size: 170px;
+        flex-basis: 170px;
+    margin-bottom: 20px;
   }
   .reasons-choosing__block-title h3 {
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: 700;
   }
   .cards {
     -webkit-box-pack: center;
@@ -908,23 +914,11 @@ svg:hover {
 }
 
 @media screen and (max-width: 700px) {
-  .section-welcome-block {
-    background: #0A1137;
-  }
   .section-step-promo {
-    background: #02002C;
-  }
-  .section-reasons-choosing {
-    background: #150049;
-  }
-  .section-reasons-choosing .section-title {
-    background: none;
+    padding: 20.3% 0 20.5% 0;
   }
   .section-reasons-choosing__bgr-bottom {
     display: none;
-  }
-  .section-partner-blocks {
-    background: #201145;
   }
   .section-partner-blocks__bgr-right-bottom {
     display: none;
@@ -932,14 +926,24 @@ svg:hover {
   .section-partner-blocks__bgr-left-bottom {
     display: none;
   }
-  .section-regions {
-    background: #FFFFFF;
+  .reasons-choosing {
+    padding: 12% 0 12% 0;
   }
-  .section-contacts {
-    background: #FFFFFF;
+  .reasons-choosing-block-img {
+    width: 140px;
+    height: 140px;
+  }
+  .reasons-choosing__block-title br {
+    display: none;
   }
   .section-map-block img:nth-child(2) {
     display: none;
+  }
+  .section-reasons-choosing {
+    padding: 12% 0 0 0;
+  }
+  .section-reasons-choosing .section-title h2 {
+    line-height: 35px;
   }
   .section-title3 {
     display: -webkit-box;
@@ -1004,6 +1008,7 @@ svg:hover {
   }
   .section-title2 {
     font-size: 30px;
+    width: 80%;
   }
   .step-promo__title h3 {
     font-size: 26px;
@@ -1045,13 +1050,19 @@ svg:hover {
   .wrap-step-promo {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-    padding: 0 0 10% 0;
+    width: 80%;
   }
   .step-promo__block {
     padding: 0;
   }
   .step-promo__title {
     padding: 0 0 10% 0;
+  }
+  .section-block-btn {
+    padding: 12% 0 7% 0;
+  }
+  .section-title2 {
+    padding: 4.2% 0 12% 0;
   }
 }
 
@@ -1103,13 +1114,15 @@ svg:hover {
   display: none;
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 56%;
   width: auto;
-  padding: 16px;
+  padding: 0 16px;
   margin-top: -22px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 25px;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
@@ -1128,11 +1141,11 @@ svg:hover {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .prev, .next {
-  font-size: 11px;
+  font-size: 18px;
 }
 
 .active, .dot:hover {
