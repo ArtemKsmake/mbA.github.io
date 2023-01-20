@@ -82,9 +82,6 @@ img {
   width: 100%;
   margin: 0 auto;
   padding: 0 0 5.4% 0;
-  visibility: hidden;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
 }
 
 .Become-bloсk {
