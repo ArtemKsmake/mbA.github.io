@@ -28,7 +28,9 @@
           </div>
           <div class="section-block-btn">
             <button class="block-btn">
-              <a href="" class="section-block-btn__link"
+              <a
+                href="https://melbet-affiliate.com/"
+                class="section-block-btn__link"
                 ><span>JOIN NOW</span></a
               >
             </button>
@@ -132,7 +134,11 @@
         </div>
         <div class="section-block-btn">
           <button class="block-btn">
-            <a href="" class="section-block-btn__link"><span>JOIN NOW</span></a>
+            <a
+              href="https://melbet-affiliate.com/"
+              class="section-block-btn__link"
+              ><span>JOIN NOW</span></a
+            >
           </button>
         </div>
         <div class="section-reasons-choosing__bgr-top">
@@ -198,7 +204,11 @@
         </div> -->
         <div class="easons-choosing-btn">
           <button class="block-btn">
-            <a href="" class="section-block-btn__link"><span>JOIN NOW</span></a>
+            <a
+              href="https://melbet-affiliate.com/"
+              class="section-block-btn__link"
+              ><span>JOIN NOW</span></a
+            >
           </button>
         </div>
         <div class="section-reasons-choosing__bgr-bottom">
@@ -414,6 +424,9 @@
             if (width < 650) {
               var i;
               var slides = document.getElementsByClassName("card");
+
+              // var slides = document.getElementsByClassName("card> img ");
+
               var dots = document.getElementsByClassName("dot");
               if (n > slides.length) {
                 slideIndex = 1;
@@ -422,19 +435,25 @@
                 slideIndex = slides.length;
               }
               for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+                // slides[i].style.display = "none";
+                slides[i].style.cssText = "display:none; ";
               }
               for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
               }
-              slides[slideIndex - 1].style.cssText = "display :block; ";
+              slides[slideIndex - 1].style.cssText =
+                " animation-name: example;animation-duration: .4s;display :block; ";
               dots[slideIndex - 1].className += " active";
             }
           }
         </script>
         <div class="section-block-btn">
           <button class="block-btn">
-            <a href="" class="section-block-btn__link"><span>JOIN NOW</span></a>
+            <a
+              href="https://melbet-affiliate.com/"
+              class="section-block-btn__link"
+              ><span>JOIN NOW</span></a
+            >
           </button>
         </div>
         <div class="section-partner-blocks__bgr-bottom">
