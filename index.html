@@ -395,8 +395,8 @@
             <div class="section-partner-blocks__bgr-right-bottom">
               <img src="https://i.ibb.co/1r1hj65/twist-line1.png" alt="" />
             </div>
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
+            <a class="prev" onclick="plusSlides(-1, 'left')">❮</a>
+            <a class="next" onclick="plusSlides(1, 'right')">❯</a>
           </div>
           <div style="text-align: center">
             <span class="dot" onclick="currentSlide(1)"></span>
@@ -408,22 +408,20 @@
           var slideIndex = 1;
           showSlides(slideIndex);
 
-          function plusSlides(n) {
-            showSlides((slideIndex += n));
+          function plusSlides(n, position) {
+            showSlides((slideIndex += n), position);
           }
 
           function currentSlide(n) {
             showSlides((slideIndex = n));
           }
 
-          function showSlides(n) {
+          function showSlides(n, position) {
             let width = document.documentElement.clientWidth;
 
             if (width < 650) {
               var i;
               var slides = document.getElementsByClassName("card");
-
-              // var slides = document.getElementsByClassName("card> img ");
 
               var dots = document.getElementsByClassName("dot");
               if (n > slides.length) {
@@ -433,15 +431,24 @@
                 slideIndex = slides.length;
               }
               for (i = 0; i < slides.length; i++) {
-                // slides[i].style.display = "none";
                 slides[i].style.cssText = "display:none; ";
               }
               for (i = 0; i < dots.length; i++) {
+                slides[slideIndex - 1].style.cssText =
+                  "-webkit-animation-name: example;animation-name: example;-webkit-animation-duration: .4s;animation-duration: .4s;display: block;";
+                dots[slideIndex - 1].className += " active";
+                if (position == "left") {
+                  slides[slideIndex - 1].style.cssText =
+                    "-webkit-animation-name: example;animation-name: example;-webkit-animation-duration: .4s;animation-duration: .4s;display: block;";
+                  // dots[slideIndex - 1].className += " active";
+                }
+                if (position == "right") {
+                  slides[slideIndex - 1].style.cssText =
+                    "-webkit-animation-name: example1;animation-name: example1;-webkit-animation-duration: .4s;animation-duration: .4s;display: block;";
+                  // dots[slideIndex - 1].className += " active";
+                }
                 dots[i].className = dots[i].className.replace(" active", "");
               }
-              slides[slideIndex - 1].style.cssText =
-                "-webkit-animation-name: example;animation-name: example;-webkit-animation-duration: .4s;animation-duration: .4s;display: block;";
-              dots[slideIndex - 1].className += " active";
             }
           }
         </script>
