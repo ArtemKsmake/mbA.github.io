@@ -330,9 +330,6 @@
           <h2 class="title-block">Real partners</h2>
         </div>
         <div class="wrap-partner-blocks">
-          <!-- <div class="partner-block"></div>
-          <div class="partner-block"></div>
-          <div class="partner-block"></div> -->
           <div class="cards">
             <div class="section-partner-blocks__bgr-left-bottom">
               <img src="https://i.ibb.co/xYcYV8j/Group-16.png" alt="" />
@@ -435,19 +432,17 @@
               }
               for (i = 0; i < dots.length; i++) {
                 slides[slideIndex - 1].style.cssText =
-                  "-webkit-animation-name: example;animation-name: example;-webkit-animation-duration: .8s;animation-duration: .4s;display: block;";
-                dots[slideIndex - 1].className += " active";
+                  "-webkit-animation-name: example;animation-name: example;-webkit-animation-duration: 1s;animation-duration: 1s;display: block;";
+                // dots[slideIndex - 1].className += " active";
                 if (position == "left") {
                   slides[slideIndex - 1].style.cssText =
-                    "-webkit-animation-name: example;animation-name: example;-webkit-animation-duration: .8s;animation-duration: .4s;display: block;";
-                  // dots[slideIndex - 1].className += " active";
+                    "-webkit-animation-name: example;animation-name: example;-webkit-animation-duration: 1s;animation-duration: 1s;display: block;";
                 }
                 if (position == "right") {
                   slides[slideIndex - 1].style.cssText =
-                    "-webkit-animation-name: example1;animation-name: example1;-webkit-animation-duration: .4s;animation-duration: .4s;display: block;";
-                  // dots[slideIndex - 1].className += " active";
+                    "-webkit-animation-name: example1;animation-name: example1;-webkit-animation-duration: 1s;animation-duration: 1s;display: block;";
                 }
-                dots[i].className = dots[i].className.replace(" active", "");
+                // dots[i].className = dots[i].className.replace(" active", "");
               }
             }
           }
