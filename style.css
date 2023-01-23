@@ -582,7 +582,7 @@ h3 {
 }
 
 .text h3 {
-  text-align: center;
+  text-align: right;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-style: italic;
@@ -1174,10 +1174,6 @@ svg:hover {
   font-size: 18px;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
-}
-
 @media screen and (max-width: 645px) {
   .dot {
     display: inline-block;
@@ -1241,6 +1237,32 @@ svg:hover {
 }
 
 @keyframes example {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes example1 {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes example1 {
   0% {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
