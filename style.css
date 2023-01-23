@@ -582,7 +582,7 @@ h3 {
 }
 
 .text h3 {
-  text-align: right;
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-style: italic;
@@ -1264,6 +1264,36 @@ svg:hover {
 
 @keyframes example1 {
   0% {
+    -webkit-transform: translateX(50%) scale(0.9);
+            transform: translateX(50%) scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%) scale(1);
+            transform: translateX(0%) scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes example2 {
+  0% {
+    display: block;
+    position: absolute;
+    -webkit-transform: translateX(50%) scale(0.9);
+            transform: translateX(50%) scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%) scale(1);
+            transform: translateX(0%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes example2 {
+  0% {
+    display: block;
+    position: absolute;
     -webkit-transform: translateX(50%) scale(0.9);
             transform: translateX(50%) scale(0.9);
     opacity: 0;
