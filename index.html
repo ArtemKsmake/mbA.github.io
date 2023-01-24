@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="slick-1.8.1/slick/slick-theme.css"
+    />
+    <script src=""></script>
   </head>
   <body>
     <div class="wrapper">
@@ -149,12 +156,6 @@
         </div>
       </section>
       <section class="section-block section-reasons-choosing">
-        <!-- <div class="section-reasons-choosing__bgr-top">
-          <img
-            src="https://i.ibb.co/JRnF0G2/Melbet-affiliate-1920-3.png"
-            alt=""
-          />
-        </div> -->
         <div class="section-title">
           <h2 class="title-block">
             Why choose MELBET affiliate program in Africa?
@@ -196,12 +197,7 @@
             </div>
           </div>
         </div>
-        <!-- <div class="section-reasons-choosing__bgr-top">
-          <img
-            src="https://i.ibb.co/JRnF0G2/Melbet-affiliate-1920-3.png"
-            alt=""
-          />
-        </div> -->
+
         <div class="easons-choosing-btn">
           <button class="block-btn">
             <a
@@ -225,11 +221,6 @@
             src="https://i.ibb.co/fQ36bLx/Melbet-affiliate-1920.png"
             alt=""
           />
-          <!-- <img
-            class="section-about__top-img"
-            src="https://i.ibb.co/j6pK8fx/Melbet-affiliate-1920-1.jpg"
-            alt=""
-          /> -->
         </div>
         <div class="section-about-block">
           <div class="section-about__content">
@@ -296,10 +287,6 @@
                         cl.style.cssText = "display:none";
                         op.style.cssText = "display:block";
                       }
-                      // if (i == 0) {
-                      //   slides[i].style.cssText =
-                      //     "overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;";
-                      // }
                     }
                     a++;
                     console.log(a);
@@ -329,11 +316,9 @@
         <div class="section-title">
           <h2 class="title-block">Real partners</h2>
         </div>
+
         <div class="wrap-partner-blocks">
-          <div class="cards">
-            <div class="section-partner-blocks__bgr-left-bottom">
-              <img src="https://i.ibb.co/xYcYV8j/Group-16.png" alt="" />
-            </div>
+          <div class="cards-slider">
             <article class="card">
               <img
                 src="https://i.ibb.co/vB0mz3N/2023-01-13-15-07-21.png"
@@ -352,10 +337,10 @@
                 </p>
               </div>
             </article>
-            <article class="card card_active">
+            <article class="card">
               <img
                 src="https://i.ibb.co/SdCPjJG/2023-01-13-15-07-05.png"
-                alt="Sample photo"
+                alt=""
               />
               <div class="text">
                 <h3>
@@ -374,7 +359,7 @@
             <article class="card">
               <img
                 src="https://i.ibb.co/tbT8R4s/2023-01-13-15-07-14.png"
-                alt="Sample photo"
+                alt=""
               />
               <div class="text">
                 <h3>
@@ -389,72 +374,7 @@
                 </p>
               </div>
             </article>
-            <div class="section-partner-blocks__bgr-right-bottom">
-              <img src="https://i.ibb.co/1r1hj65/twist-line1.png" alt="" />
-            </div>
-            <a class="prev" onclick="plusSlides(-1, 'left')">❮</a>
-            <a class="next" onclick="plusSlides(1, 'right')">❯</a>
           </div>
-          <div style="text-align: center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-        </div>
-        <script>
-          var slideIndex = 1;
-          showSlides(slideIndex);
-
-          function plusSlides(n, position) {
-            showSlides((slideIndex += n), position);
-          }
-
-          function currentSlide(n) {
-            showSlides((slideIndex = n));
-          }
-
-          function showSlides(n, position) {
-            let width = document.documentElement.clientWidth;
-
-            if (width < 650) {
-              var i;
-              var slides = document.getElementsByClassName("card");
-
-              var dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {
-                slideIndex = 1;
-              }
-              if (n < 1) {
-                slideIndex = slides.length;
-              }
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.cssText = "display:none; ";
-              }
-              for (i = 0; i < dots.length; i++) {
-                slides[slideIndex - 1].style.cssText =
-                  "-webkit-animation-name: example;animation-name: example;-webkit-animation-duration: 1s;animation-duration: 1s;display: block;";
-                // dots[slideIndex - 1].className += " active";
-                if (position == "left") {
-                  slides[slideIndex - 1].style.cssText =
-                    "-webkit-animation-name: example;animation-name: example;-webkit-animation-duration: 1s;animation-duration: 1s;display: block;";
-                }
-                if (position == "right") {
-                  slides[slideIndex - 1].style.cssText =
-                    "-webkit-animation-name: example1;animation-name: example1;-webkit-animation-duration: 1s;animation-duration: 1s;display: block;";
-                }
-                // dots[i].className = dots[i].className.replace(" active", "");
-              }
-            }
-          }
-        </script>
-        <div class="section-block-btn">
-          <button class="block-btn">
-            <a
-              href="https://melbet-affiliate.com/"
-              class="section-block-btn__link"
-              ><span>JOIN NOW</span></a
-            >
-          </button>
         </div>
         <div class="section-partner-blocks__bgr-bottom">
           <img src="https://i.ibb.co/C6pzkzn/Melbet-affiliate12.png" alt="" />
@@ -528,7 +448,6 @@
     </button>
 
     <script>
-      // When the user scrolls down 20px from the top of the document, show the button
       window.onscroll = function () {
         scrollFunction();
       };
@@ -549,6 +468,41 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="slick-1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".cards-slider").slick({
+          infinite: false,
+          arrows: false,
+          // adaptiveHeight: true,
+          slidesToShow: 3,
+
+          slidesToShow: 3,
+          responsive: [
+            {
+              breakpoint: 700,
+              settings: {
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+                arrows: true,
+                adaptiveHeight: false,
+              },
+            },
+          ],
+        });
+      });
     </script>
   </body>
 </html>
