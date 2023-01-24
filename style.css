@@ -1061,8 +1061,9 @@ svg:hover {
     font-size: 22px;
   }
   .wrap-section-map {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+     -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   li {
     display: inline-block;
