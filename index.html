@@ -12,7 +12,6 @@
       type="text/css"
       href="slick-1.8.1/slick/slick-theme.css"
     />
-    <script src=""></script>
   </head>
   <body>
     <div class="wrapper">
@@ -55,7 +54,7 @@
           <h2 class="title-block">How to earn</h2>
         </div>
         <div class="section-title2">
-          <span class="title-block-2">Everything is very simple</span>
+          <span class="">Everything is very simple</span>
         </div>
         <div class="step-promo">
           <div class="wrap-step-promo">
@@ -102,42 +101,6 @@
             <span class="dot1" onclick="currentSlide1(2)"></span>
             <span class="dot1" onclick="currentSlide1(3)"></span>
           </div>
-          <script>
-            var slideIndex = 1;
-            showSlides1(slideIndex);
-
-            function plusSlides1(n) {
-              showSlides1((slideIndex += n));
-            }
-
-            function currentSlide1(n) {
-              showSlides1((slideIndex = n));
-            }
-
-            function showSlides1(n) {
-              let width = document.documentElement.clientWidth;
-              if (width < 600) {
-                var i;
-                var slides =
-                  document.getElementsByClassName("step-promo__block");
-                var dots = document.getElementsByClassName("dot1");
-                if (n > slides.length) {
-                  slideIndex = 1;
-                }
-                if (n < 1) {
-                  slideIndex = slides.length;
-                }
-                for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-              }
-            }
-          </script>
         </div>
         <div class="section-block-btn">
           <button class="block-btn">
@@ -216,11 +179,25 @@
       </section>
       <section class="section-block section-about">
         <div class="section-about__bgr-left">
-          <img
+          <!-- <img
             class="section-about__bgr-left-img"
             src="https://i.ibb.co/fQ36bLx/Melbet-affiliate-1920.png"
             alt=""
-          />
+          /> -->
+          <picture class="section-about__bgr-left-img">
+            <source
+              media="(max-width:1235px)"
+              srcset="
+                https://i.ibb.co/hLNV9sm/Melbet-affiliate-none-display.png
+              "
+            />
+
+            <img
+              src="https://i.ibb.co/fQ36bLx/Melbet-affiliate-1920.png"
+              alt="Flowers"
+              style="width: auto"
+            />
+          </picture>
         </div>
         <div class="section-about-block">
           <div class="section-about__content">
@@ -255,54 +232,34 @@
               </p>
               <a class="open" onclick="openText()">&#8744;</a>
               <a class="clouse" onclick="openText()">&#8743;</a>
-              <script>
-                var a = 1;
-                function openText(n) {
-                  let width = document.documentElement.clientWidth;
-                  var slides = document.querySelectorAll(
-                    ".section-about__text > p"
-                  );
-                  if (a == 1) {
-                    for (i = 0; i < slides.length; i++) {
-                      if (i >= 1) {
-                        slides[i].style.display = "block";
-                        let op = document.querySelector(".open");
-                        let cl = document.querySelector(".clouse");
-                        cl.style.cssText = "display:block";
-                        op.style.cssText = "display:none";
-                      }
-                      if (i == 0) {
-                        slides[i].style.cssText = "display:block";
-                      }
-                    }
-                    a--;
-                    console.log(a);
-                  } else {
-                    console.log(a);
-                    for (i = 0; i < slides.length; i++) {
-                      if (i >= 1) {
-                        slides[i].style.display = "none";
-                        let op = document.querySelector(".open");
-                        let cl = document.querySelector(".clouse");
-                        cl.style.cssText = "display:none";
-                        op.style.cssText = "display:block";
-                      }
-                    }
-                    a++;
-                    console.log(a);
-                  }
-                }
-              </script>
             </div>
           </div>
         </div>
         <div class="section-about__bot-right">
-          <img
-            aling="right"
-            class="section-about__top-img"
-            src="https://i.ibb.co/gtQQDk6/Melbet-affiliate-1920-1.png"
-            alt=""
-          />
+          <picture class="section-about__top-img">
+            <source
+              media="(min-width:1000px)"
+              srcset="https://i.ibb.co/kGMdmJF/Melbet-affiliate-1235.png"
+            />
+            <source
+              media="(min-width:800px)"
+              srcset="https://i.ibb.co/BgFT2H8/Melbet-affiliate-900.png"
+            />
+            <source
+              media="(min-width:600px)"
+              srcset="https://i.ibb.co/NZdSMpY/Melbet-affiliate-600.png"
+            />
+
+            <source
+              media="(min-width:360px)"
+              srcset="https://i.ibb.co/qmKBBnh/Melbet-affiliate-500.png"
+            />
+            <img
+              src="https://i.ibb.co/qmKBBnh/Melbet-affiliate-500.png"
+              alt="Flowers"
+              style="width: 100%"
+            />
+          </picture>
         </div>
 
         <div class="section-about__bgr-bottom">
@@ -321,7 +278,7 @@
           <div class="cards-slider">
             <article class="card">
               <img
-                src="https://i.ibb.co/vB0mz3N/2023-01-13-15-07-21.png"
+                src="https://i.ibb.co/p2wptSZ/2023-01-13-15.jpg"
                 alt="Sample photo"
               />
               <div class="text">
@@ -338,10 +295,7 @@
               </div>
             </article>
             <article class="card">
-              <img
-                src="https://i.ibb.co/SdCPjJG/2023-01-13-15-07-05.png"
-                alt=""
-              />
+              <img src="https://i.ibb.co/0mzz3Hr/2023-01-13-15-2.jpg" alt="" />
               <div class="text">
                 <h3>
                   Lolade Nwogu , <br />
@@ -357,10 +311,7 @@
               </div>
             </article>
             <article class="card">
-              <img
-                src="https://i.ibb.co/tbT8R4s/2023-01-13-15-07-14.png"
-                alt=""
-              />
+              <img src="https://i.ibb.co/MZx3WWZ/2023-01-13-15-1.jpg" alt="" />
               <div class="text">
                 <h3>
                   Emeka Aremu, <br />
@@ -447,29 +398,6 @@
       <img src="https://i.ibb.co/Fx5LM20/image.png" alt="" />
     </button>
 
-    <script>
-      window.onscroll = function () {
-        scrollFunction();
-      };
-
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          document.getElementById("myBtn").style.display = "block";
-        } else {
-          document.getElementById("myBtn").style.display = "none";
-        }
-      }
-
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
-
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.6.3.min.js"
@@ -478,31 +406,6 @@
       type="text/javascript"
       src="slick-1.8.1/slick/slick.min.js"
     ></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $(".cards-slider").slick({
-          infinite: false,
-          arrows: false,
-          // adaptiveHeight: true,
-          slidesToShow: 3,
-
-          slidesToShow: 3,
-          responsive: [
-            {
-              breakpoint: 700,
-              settings: {
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true,
-                arrows: true,
-                adaptiveHeight: false,
-              },
-            },
-          ],
-        });
-      });
-    </script>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
